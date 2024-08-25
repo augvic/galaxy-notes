@@ -10,10 +10,12 @@ const path = require('path');
 function create_window() {
 
     const mainwindow = new BrowserWindow({
-        width: 800,
-        height: 600
+        width: 1280,
+        height: 720,
+        icon: path.join('./assets/icon.png')
     });
-    mainwindow.loadFile('index.html');
+    mainwindow.loadFile('./main-window/index.html');
+    mainwindow.setMenuBarVisibility(false);
 }
 
 //==================================================\\

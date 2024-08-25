@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>galaxy-notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <div id="side-bar">
+        <div id="note-buttons">
+            <div class="welcome">Welcome, Augusto!</div>
+            <input type="button" id="create-new-note" value="Create Note" class="buttons">
+            <input type="button" id="create-new-book" value="Create Book" class="buttons">
+        </div>
+        <div id="books">
+            <div class="books-label">Books</div>
+            <input type="button" value="Test" class="books-class">
+            <input type="button" value="Test2" class="books-class">
+        </div>
+    </div>
+    <div id="note-display">
+        <div id="book-display">
+            <div class="display-title">
+                <p id="book-name">Book Name</p>
+            </div>
+            <div class="display-content">
+                <div class="notes" value="Note1">Nota1</div>
+            </div>
+        </div>
+        <div id="create-note-display"></div>
+        <div id="create-book-display"></div>
+    </div>
 </body>
 </html>
