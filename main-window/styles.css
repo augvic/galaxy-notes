@@ -63,6 +63,7 @@ body {
     border-bottom: 2px solid rgb(90, 74, 180);
     color: aliceblue;
     justify-content: center;
+    cursor: default;
 }
 
 .buttons {
@@ -149,13 +150,13 @@ body {
 }
 
 #create-note-display {
-    display: None;
+    display: none;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-.display-title {
+#display-title {
     display: flex;
     width: 100%;
     height: 10%;
@@ -166,9 +167,10 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: aliceblue;
+    cursor: default;
 }
 
-.display-content {
+#display-content {
     width: 100%;
     height: 90%;
     border-bottom-left-radius: 10px;
@@ -184,8 +186,48 @@ body {
     height: 10%;
     border-bottom: 2px solid rgb(90, 74, 180);
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .notes:hover {
     background-color: rgb(49, 47, 65);
+}
+
+#notes-preview-display {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#notes-full-view {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+#note-title {
+    width: 100%;
+    height: 10%;
+    border: none;
+    border-bottom: 2px solid rgb(90, 74, 180);
+    background-color: transparent;
+    padding-left: 5%;
+    color: aliceblue;
+    font-size: 100%;
+    outline: none;
+}
+
+#textarea {
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: 100%;
+    padding: 5%;
+    text-align: justify;
+    font-family: 'Aptos', Arial, sans-serif;
+    outline: none;
+    resize: none;
 }

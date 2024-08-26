@@ -1,7 +1,7 @@
 {
   "name": "galaxy-notes",
   "version": "1.0.0",
-  "main": "./src/main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron ."
   },
@@ -11,5 +11,14 @@
   "description": "",
   "devDependencies": {
     "electron": "^32.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.5",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fetch": "^1.1.0",
+    "mysql2": "^3.11.0"
   }
 }
