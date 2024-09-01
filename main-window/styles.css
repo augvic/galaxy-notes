@@ -108,6 +108,30 @@ body {
     height: 85%;
 }
 
+#books-view {
+    width: 95%;
+    height: 100%;
+    overflow-y: auto;
+    margin-bottom: 5%;
+}
+
+#books-view::-webkit-scrollbar {
+    background-color: rgb(49, 47, 65);
+    border-radius: 10px;
+    width: 10px;
+}
+
+#books-view::-webkit-scrollbar-thumb {
+    background-color: rgb(49, 47, 65);
+    background-color: rgb(91, 89, 107);
+    border-radius: 10px;
+}
+
+#books-view::-webkit-scrollbar-thumb:hover {
+    cursor: default;
+    background-color: rgb(140, 136, 165);
+}
+
 #books p {
     color: aliceblue;
     cursor: default;
@@ -134,12 +158,20 @@ body {
 #note-display {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
     width: 80%;
     height: 100%;
     margin-left: 1%;
     background-color: rgb(35, 33, 44);
     border: 2px solid rgb(90, 74, 180);
     border-radius: 10px;
+}
+
+#welcome {
+    color: aliceblue;
+    font-size: large;
+    cursor: default;
 }
 
 #book-display {
@@ -187,6 +219,7 @@ body {
     border-bottom: 2px solid rgb(90, 74, 180);
     transition: background-color 0.3s ease;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .notes:hover {
@@ -194,9 +227,26 @@ body {
 }
 
 #notes-preview-display {
+    flex-direction: column;
     width: 100%;
     height: 100%;
     display: none;
+    overflow-y: auto;
+}
+
+#notes-preview-display::-webkit-scrollbar {
+    background-color: rgb(49, 47, 65);
+    border-bottom-right-radius: 10px;
+}
+
+#notes-preview-display::-webkit-scrollbar-thumb {
+    background-color: rgb(91, 89, 107);
+    border-radius: 10px;
+}
+
+#notes-preview-display::-webkit-scrollbar-thumb:hover {
+    cursor: default;
+    background-color: rgb(140, 136, 165);
 }
 
 #notes-full-view {
@@ -218,16 +268,62 @@ body {
     outline: none;
 }
 
-#textarea {
+#note-body {
     width: 100%;
     height: 90%;
     background-color: transparent;
     border: none;
     color: aliceblue;
     font-size: 100%;
-    padding: 5%;
     text-align: justify;
     font-family: 'Aptos', Arial, sans-serif;
     outline: none;
     resize: none;
+}
+
+#text-area {
+    padding: 5%;
+    outline: none;
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
+}
+
+#text-area::-webkit-scrollbar {
+    background-color: rgb(49, 47, 65);
+    border-bottom-right-radius: 10px;
+}
+
+#text-area::-webkit-scrollbar-thumb {
+    background-color: rgb(91, 89, 107);
+    border-radius: 10px;
+}
+
+#text-area::-webkit-scrollbar-thumb:hover {
+    cursor: default;
+    background-color: rgb(140, 136, 165);
+}
+
+#tool-bar {
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(49, 47, 65);
+}
+
+.tool-bar-buttons {
+    background-color: rgb(91, 89, 107);
+    height: 70%;
+    width: 3%;
+    margin-right: 1%;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    transition: background-color 0.2s ease;
+}
+
+.tool-bar-buttons:hover {
+    cursor: pointer;
 }

@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>galaxy-notes</title>
+    <title>Galaxy Notes</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div id="side-bar">
         <div id="note-buttons">
-            <div class="welcome">Welcome, Augusto!</div>
+            <div class="welcome">Galaxy Notes</div>
             <input type="button" id="create-new-note" value="Create Note" class="buttons">
             <input type="button" id="create-new-book" value="Create Book" class="buttons">
         </div>
         <div id="books">
             <div class="books-label">Books</div>
-            <!-- Here will be injected the books. -->
+            <div id="books-view">
+                <!-- Here will be injected the books. -->
+            </div>
         </div>
     </div>
     <div id="note-display">
+        <p id="welcome">Select a book to view notes or create a new book or note!</p>
         <div id="book-display">
             <div id="display-title">
                 <p id="book-name">Book Name</p>
